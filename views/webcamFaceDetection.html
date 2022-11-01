@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FaceId</title>
+  <style>
+    img {
+      object-fit: cover;
+    }
+
+    video {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <header><a href="face-detection">face-detection</a> | <a href="webcam-face-detection">webcam-face-detection</a></header>
+  <div style="position: relative" class="margin">
+    <video onloadedmetadata="onPlay(this)" id="video" autoplay muted playsinline></video>
+    <canvas id="myCanvas"></canvas>
+    <button id="startbutton">Take photo</button>
+  </div>
+
+<script src="/src/face-api.js"></script>
+<script src="/src/webcamFaceDetection.js"></script>
+</body>
+</html>
